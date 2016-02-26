@@ -21,11 +21,6 @@ Backend for BarcodeDude app, in Node.js
 In gulpfile.js
 
 ```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
-
-```javascript
 var gulp = require('gulp');
 var nodemon = require('gulp-nodemon');
 ```
