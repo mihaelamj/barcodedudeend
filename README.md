@@ -1,4 +1,7 @@
 # barcodedudeend
+
+Tutorial on how to make a REST API using Node.js with MongoDB
+
 Backend for BarcodeDude app, in Node.js
 
 ##Initial Steps
