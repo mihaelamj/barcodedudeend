@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/mihaelamj/barcodedudeend#readme",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "express": "^4.13.4",
-    "gulp-nodemon": "^2.0.6"
+    "gulp-nodemon": "^2.0.6",
+    "mongoose": "^4.4.5"
   },
   "devDependencies": {
     "gulp-env": "^0.4.0"
