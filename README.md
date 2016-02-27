@@ -12,6 +12,10 @@ Backend for BarcodeDude app, in Node.js
 5. Install nodemon for gulp (npm install gulp-nodemon --save)
 
 ##Add typings
+
+Typings allow your IDE/Editor to provide intellisense.
+I use Visual Studio Code, for it has Node.js debugger setup.
+
 * npm install tsd@next -g
 * in local folder 
     * tsd install node
@@ -158,7 +162,7 @@ var ScanItem = require('./models/ScanItem');
 ```
 ##Use Body Parser
 
-Body parser enables you to send JSONs in body
+Body parser is middleware that allows Express to read the body, and then parse that into JSON object.
 
 ###Install body-parser
 
@@ -172,13 +176,16 @@ require it
 var bodyParser = require('body-parser');
 ```
 
-use it
+use it, url encoded, JSON
 
 ```javascript
 var app = express();
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 ```
+Now bodyParser is going to look at the body and see if it has any JSON object in it.
+If it does it's going to take that JSON object and if it does it's going to add it to req.body.
+We can use that JSON object to create new ScanItem object.
 
 ##Make Router
 
@@ -213,6 +220,45 @@ in app.js
 var scanItemRouter = require('./routes/scanItemRoutes')(ScanItem);
 app.use('/api/scanItems', scanItemRouter); 
 ```
+
+The line
+```javascript
+app.use('/api/scanItems', scanItemRouter); 
+```
+
+sets our API path to be:
+`/api/scanItems/`
+
+So the scanItemRouter starts from that path. We may change it whenever we like, in app.js, and nothing need to be changed in scanItemRoutes.js.
+
+### Filtering with Query String
+Query string in the url looks like:
+
+`http://localhost:8000/api/scanItems?author=mmj`
+
+Express is going to package the query string parameters into a JSON in req.query, so that it becomes:
+
+```JSON
+req.query = 
+{
+	author: 'mmj'
+}
+```
+That's how we do filtering.
+
+###Add more routes
+
+##Use Postman Chrome extension
+
+
+##Make Controller
+We will handle routing via controller
+
+`mkdir controller`
+
+In controller dir
+
+`touch scanItemController.js`
 
 
 

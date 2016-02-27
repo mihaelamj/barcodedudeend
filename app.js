@@ -20,6 +20,7 @@ app.use(bodyParser.json());
 
 //injecting a ScanItem model into scanItemRouter constructor
 var scanItemRouter = require('./routes/scanItemRoutes')(ScanItem);
+//need to document this!!!!!
 app.use('/api/scanItems', scanItemRouter); 
 
 var port = process.env.PORT || 8000;
