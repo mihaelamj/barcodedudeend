@@ -2,7 +2,7 @@
 
 Tutorial on how to make a REST API using Node.js with MongoDB
 
-Backend for BarcodeDude app, in Node.js
+Backend for BarcodeDude iOS (Objective C) app, in Node.js
 
 ##Initial Steps
 1. npm init
@@ -153,6 +153,8 @@ Export it
 ```javascript
 module.exports= mongoose.model('ScanItem', ScanItemModel);
 ```
+
+The image of the scanned barcode will be added later, and I will use AWS for that.
 
 ###Use it in app.js
 
