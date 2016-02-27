@@ -11,6 +11,9 @@ For now I have two engines:
 * [ZXingObjC](https://github.com/TheLevelUp/ZXingObjC)
 * My Engine adopted form Oliver Drobnik's [book](https://www.manning.com/books/barcodes-with-ios)
 
+There will be another, third, propritery engine added, which I will not post here, on GitHub. It will remain private on BitBucket.
+So there will be two projects, which I will sync. One < than the other.
+
 ##Initial Steps
 1. npm init
 2. install Express
