@@ -3,7 +3,7 @@
 Tutorial on how to make a REST API using Node.js with MongoDB
 
 Backend for BarcodeDude iOS (Objective C) app, in Node.js.
-BarcodeDude iOS app will be potred to Github later. Now it resides in private BitBucket repo.
+BarcodeDude iOS app will be ported to Github later. Now it resides in private BitBucket repo.
 
 The purpose of this app is to compare scanning engines for iOS, in terms of scanning time and accuracy.
 For now I have two engines:
