@@ -4,8 +4,9 @@ var Schema = mongoose.Schema;
 var ScanItemModel = new Schema({
     text: {type: String, required: true},
     format: {type: String, required: true},
-    author: {type: String, required: true},
-    timestamp: {type: Date, default: Date.now},
+    author: {type: String, required: false},
+    identifier: {type: String, required: true},
+    date: {type: Date, default: Date.now},
     hyperlink: {type: Boolean, default:false},
     correct: {type: Boolean, default:false}
 });
