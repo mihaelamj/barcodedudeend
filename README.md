@@ -210,7 +210,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 ```
 Now bodyParser is going to look at the body and see if it has any JSON object in it.
-If it does it's going to take that JSON object and if it does it's going to add it to req.body.
+If it does it's going to take that JSON object and add it to req.body.
 We can use that JSON object to create new ScanItem object.
 
 ##Make Router
