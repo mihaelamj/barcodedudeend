@@ -255,7 +255,7 @@ app.use('/api/scanItems', scanItemRouter);
 sets our API path to be:
 `/api/scanItems/`
 
-So the scanItemRouter starts from that path. We may change it whenever we like, in app.js, and nothing need to be changed in scanItemRoutes.js.
+So the scanItemRouter starts from that path. We may change it whenever we like, in app.js, and nothing needs to be changed in scanItemRoutes.js.
 
 ### Filtering with Query String
 Query string in the url looks like:
